@@ -8,7 +8,15 @@ A Convolutional Neural Network (CNN) model is built to classify X-ray images int
 * ✅ Normal
 * 🦠 Pneumonia
 
-The goal is to explore how AI can assist in **early diagnosis in healthcare**.
+This project was created as part of my **learning journey in Deep Learning and Computer Vision**.
+
+---
+
+## ⚠️ Disclaimer
+
+* This project is built for **learning and demonstration purposes**
+* I am still learning and this is not an expert-level medical system
+* This model should **not be used for real-world medical diagnosis**
 
 ---
 
@@ -16,45 +24,60 @@ The goal is to explore how AI can assist in **early diagnosis in healthcare**.
 
 * Dataset used: **Chest X-Ray Images (Pneumonia)**
 * Source: Kaggle
-* Contains labeled X-ray images for training, validation, and testing
+* The dataset is publicly available and used under its respective license
+
+⚠️ Note:
+This repository **does not include the dataset**. Please download it directly from Kaggle.
+
+---
+
+## 📚 Reference / Inspiration
+
+This project is inspired by open-source resources and deep learning approaches for pneumonia detection.
+
+* Transfer learning using pretrained models (VGG16)
+* Concepts learned from publicly available tutorials and research materials
 
 ---
 
 ## ⚙️ Project Workflow
 
-1. **Data Acquisition**
+### 1. Data Acquisition
 
-   * Downloaded dataset using Kaggle API
-   * Extracted and organized image data
+* Downloaded dataset using Kaggle API
+* Extracted and organized image data
 
-2. **Data Preprocessing**
+### 2. Data Preprocessing
 
-   * Image resizing and normalization
-   * Splitting into train, validation, and test sets
+* Image resizing and normalization
+* Train, validation, and test split
 
-3. **Model Building**
+### 3. Model Building
 
-   * Implemented a CNN model using deep learning frameworks
-   * Layers include convolution, pooling, and fully connected layers
+* Used **VGG16 (Transfer Learning)**
+* Added custom classification layers
+* Applied dropout for regularization
 
-4. **Training**
+### 4. Training
 
-   * Model trained on labeled X-ray images
-   * Optimized using appropriate loss function and optimizer
+* Optimizer: Adam
+* Loss Function: Binary Crossentropy
+* Used callbacks (EarlyStopping, ModelCheckpoint)
 
-5. **Evaluation**
+### 5. Evaluation
 
-   * Evaluated using accuracy and loss metrics
-   * Tested on unseen data
+* Evaluated using accuracy, precision, recall, and F1-score
+* Tested on unseen data
 
 ---
 
 ## 🧪 Results
 
-* Achieved good classification performance on test data
-* Model is able to distinguish between normal and pneumonia cases
+* ✅ **Test Accuracy:** 88.30%
+* 📊 **Validation Accuracy:** 94.06%
+* 🔍 **Recall (Pneumonia):** 99%
 
-*(Add your accuracy here if available, e.g., ~90% accuracy)*
+The model performs well in identifying pneumonia cases and demonstrates practical application of deep learning in medical imaging.
 
 ---
 
@@ -72,8 +95,7 @@ The goal is to explore how AI can assist in **early diagnosis in healthcare**.
 
 * Model predictions on chest X-ray images
 * Classification results (Normal vs Pneumonia)
-
-*(You can add screenshots here later for better impact)*
+*Detailed results, including accuracy metrics and evaluation outputs, can be found in the project file.
 
 ---
 
@@ -81,38 +103,38 @@ The goal is to explore how AI can assist in **early diagnosis in healthcare**.
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/pneumonia-detection-deep-learning.git
-   ```
+```bash id="a91kx2"
+git clone https://github.com/your-username/pneumonia-detection-deep-learning.git
+```
 
 2. Install dependencies:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash id="l2mx8p"
+pip install -r requirements.txt
+```
 
 3. Add your Kaggle API key:
 
-   * Place `kaggle.json` in `~/.kaggle/`
+* Place `kaggle.json` in `~/.kaggle/`
 
-4. Run the notebook / script:
+4. Run the project:
 
-   ```bash
-   python main.py
-   ```
+```bash id="p0wq7z"
+python main.py
+```
 
 ---
 
-## ⚠️ Note
+## ⚠️ Important Notes
 
-* Do not upload your `kaggle.json` file (contains API credentials)
-* This project is for educational purposes
+* Do NOT upload your `kaggle.json` file (contains API credentials)
+* Ensure compliance with the dataset license before reuse
 
 ---
 
 ## 💡 Future Improvements
 
-* Improve model accuracy using transfer learning (ResNet, VGG)
+* Improve accuracy using advanced architectures (ResNet, EfficientNet)
 * Deploy as a web application
 * Add explainability (Grad-CAM visualization)
 
@@ -121,12 +143,12 @@ The goal is to explore how AI can assist in **early diagnosis in healthcare**.
 ## 🤝 Acknowledgements
 
 * Kaggle for providing the dataset
-* Open-source deep learning community
+* Open-source community for learning resources
 
 ---
 
 ## 🔗 Connect with Me
 
-If you liked this project, feel free to connect on LinkedIn!
+If you found this project interesting, feel free to connect with me on LinkedIn!
 
 ---
