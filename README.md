@@ -10,13 +10,16 @@ A Convolutional Neural Network (CNN) model is built to classify X-ray images int
 
 This project was created as part of my **learning journey in Deep Learning and Computer Vision**.
 
+> ⚠️ This project is for academic and learning purposes only.
+
 ---
 
 ## ⚠️ Disclaimer
 
-* This project is built for **learning and demonstration purposes**
+* This project is built for **learning and demonstration purposes only**
 * I am still learning and this is not an expert-level medical system
-* This model should **not be used for real-world medical diagnosis**
+* This model should **NOT be used for real-world medical diagnosis**
+* The implementation is **independent and not affiliated with any medical institution**
 
 ---
 
@@ -26,17 +29,36 @@ This project was created as part of my **learning journey in Deep Learning and C
 * Source: Kaggle
 * The dataset is publicly available and used under its respective license
 
+📊 The dataset contains labeled chest X-ray images categorized into **normal and pneumonia cases**, commonly used for training deep learning models 
+
 ⚠️ Note:
 This repository **does not include the dataset**. Please download it directly from Kaggle.
 
 ---
 
-## 📚 Reference / Inspiration
+## 📚 Research Reference
 
-This project is inspired by open-source resources and deep learning approaches for pneumonia detection.
+This project is inspired by the following research paper:
 
-* Transfer learning using pretrained models (VGG16)
-* Concepts learned from publicly available tutorials and research materials
+**Alshanketi, F., Alharbi, A., Kuruvilla, M., Mahzoon, V., Siddiqui, S. T., Rana, N., & Tahir, A. (2024)**
+*Pneumonia Detection from Chest X-Ray Images Using Deep Learning and Transfer Learning for Imbalanced Datasets*
+Published in: *Journal of Imaging Informatics in Medicine*
+DOI: https://doi.org/10.1007/s10278-024-01334-0
+
+---
+
+## 💡 Relation to Research
+
+This project is inspired by key ideas from the paper, including:
+
+* Use of **deep learning for medical image classification**
+* Application of **transfer learning (pretrained models like VGG, ResNet)** 
+* Handling **imbalanced datasets**
+* Use of publicly available datasets such as Chest X-ray datasets 
+
+⚠️ Important:
+This is a **simplified and independent implementation** created for learning purposes.
+No content, code, or text has been copied from the original paper.
 
 ---
 
@@ -49,7 +71,8 @@ This project is inspired by open-source resources and deep learning approaches f
 
 ### 2. Data Preprocessing
 
-* Image resizing and normalization
+* Image resizing (224 × 224) for model compatibility 
+* Normalization of pixel values
 * Train, validation, and test split
 
 ### 3. Model Building
@@ -77,7 +100,7 @@ This project is inspired by open-source resources and deep learning approaches f
 * 📊 **Validation Accuracy:** 94.06%
 * 🔍 **Recall (Pneumonia):** 99%
 
-The model performs well in identifying pneumonia cases and demonstrates practical application of deep learning in medical imaging.
+The model demonstrates strong performance in identifying pneumonia cases and showcases the potential of deep learning in medical imaging applications.
 
 ---
 
@@ -95,7 +118,8 @@ The model performs well in identifying pneumonia cases and demonstrates practica
 
 * Model predictions on chest X-ray images
 * Classification results (Normal vs Pneumonia)
-*Detailed results, including accuracy metrics and evaluation outputs, can be found in the project file.
+
+Detailed evaluation metrics and outputs can be found in the project files.
 
 ---
 
@@ -103,13 +127,13 @@ The model performs well in identifying pneumonia cases and demonstrates practica
 
 1. Clone the repository:
 
-```bash id="a91kx2"
+```bash
 git clone https://github.com/your-username/pneumonia-detection-deep-learning.git
 ```
 
 2. Install dependencies:
 
-```bash id="l2mx8p"
+```bash
 pip install -r requirements.txt
 ```
 
@@ -119,7 +143,7 @@ pip install -r requirements.txt
 
 4. Run the project:
 
-```bash id="p0wq7z"
+```bash
 python main.py
 ```
 
@@ -129,20 +153,24 @@ python main.py
 
 * Do NOT upload your `kaggle.json` file (contains API credentials)
 * Ensure compliance with the dataset license before reuse
+* This project must not be used for clinical or diagnostic purposes
 
 ---
 
 ## 💡 Future Improvements
 
-* Improve accuracy using advanced architectures (ResNet, EfficientNet)
+* Improve accuracy using advanced architectures (ResNet, EfficientNet, ViT)
+* Implement **data balancing techniques** for better generalization
 * Deploy as a web application
 * Add explainability (Grad-CAM visualization)
+* Explore semi-supervised learning approaches
 
 ---
 
 ## 🤝 Acknowledgements
 
 * Kaggle for providing the dataset
+* Authors of the referenced research paper for their contributions to the field
 * Open-source community for learning resources
 
 ---
@@ -150,5 +178,3 @@ python main.py
 ## 🔗 Connect with Me
 
 If you found this project interesting, feel free to connect with me on LinkedIn!
-
----
